@@ -42,3 +42,42 @@
 .fade-out {
   animation: fadeOut 1s ease-in-out forwards;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000 #fff;
+}
+
+*::-moz-scrollbar {
+  width: 8px;
+}
+
+*::-moz-scrollbar-track {
+  background: #fff;
+}
+
+*::-moz-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+*::-moz-scrollbar-thumb:hover {
+  background: #333;
+}

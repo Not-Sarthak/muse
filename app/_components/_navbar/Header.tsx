@@ -6,7 +6,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ text }) => {
   return (
-    <div className="flex justify-center py-10 text-black text-2xl italic font-bold">
+    <div className="flex justify-center text-black text-2xl italic font-bold">
       {text.split('').map((char, index) => (
         <span
           key={index}

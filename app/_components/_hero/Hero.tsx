@@ -4,7 +4,9 @@ import Content from "./Content";
 const Hero = () => {
   return (
     <div className="flex flex-col md:min-h-screen">
+      <div className="py-10">
       <Header text="Muse" />
+      </div>
       <div className="flex flex-1 flex-col-reverse md:flex-row">
         <div className="w-full md:w-1/2 min-h-full px-4 md:px-48 my-20 flex justify-center items-center">
           <Content
