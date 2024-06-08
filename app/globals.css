@@ -4,11 +4,41 @@
 @tailwind components;
 @tailwind utilities;
 
-.card {
-  position: fixed;
-  top: 100vh;
-  left: 50vw;
-  transform: translate(-50%, -50%) rotate(45deg);
-  opacity: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(40%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.slide-in {
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
 }
