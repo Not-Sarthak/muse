@@ -94,13 +94,13 @@ const AnimatedWord: React.FC<AnimatedWordProps> = ({ word, index, startAnimation
     index === 5 ? "text-black lg:text-5xl font-medium font-dmSans leading-[57.60px] flex flex-row-reverse absolute lg:bottom-[10rem] xl:bottom-0 lg:right-[200px] bottom-10 text-3xl" : "",
   ].join(" ");
 
-  const finalStyles = animationCompleted ? "text-black text-[40px] font-medium font-dmSans my-2 fade-in slide-in leading-[28px]" : wordStyles;
+  const finalStyles = animationCompleted ? "text-black text-[22px] lg:text-[40px] font-medium font-dmSans my-2 fade-in slide-in leading-[28px]" : wordStyles;
 
   return (
     <animated.div style={props} className={finalStyles}>
       {index === 0 && !animationCompleted && <Image src={splash} alt="Splash image" width={100} height={100} />}
       {index === 5 && !animationCompleted && <Image src={splashEnd} alt="SplashEnd image" width={100} height={100} />}
-      <div>{word}</div>
+      <div className="">{word}</div>
     </animated.div>
   );
 };

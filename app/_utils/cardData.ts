@@ -5,7 +5,7 @@ export const cardData = [
     secondWord: "algorithms",
     description:
       "Shop with confidence, knowing Muse's personalized recommendations are powered by secure and transparent AI algorithms.",
-    color: "rose-400",
+    color: "text-rose-400",
     bgColor: "bg-radial-gradient-secure",
     image: "/icons/secure.svg",
   },
@@ -15,7 +15,7 @@ export const cardData = [
     secondWord: "discovery",
     description:
       "Uncover hidden gems you never knew existed, with AI that learns your style beyond your usual choices.",
-    color: "yellow-600",
+    color: "text-yellow-600",
     bgColor: "bg-radial-gradient-personalised",
     image: "/icons/personalised.svg",
   },
@@ -25,7 +25,7 @@ export const cardData = [
     secondWord: "shopping",
     description:
       "Find what you love in just a few clicks, with Muse filtering through millions of products to curate your perfect selection.",
-    color: "indigo-700",
+    color: "text-indigo-700",
     bgColor: "bg-radial-gradient-effortless",
     image: "/icons/effortless.svg",
   },

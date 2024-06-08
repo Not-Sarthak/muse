@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({
           <Image src={image} alt="secure" layout="fill" objectFit="contain" />
         </div>
         <div className="text-left font-playfair text-xl sm:text-2xl md:text-2xl lg:text-2xl font-semibold leading-tight">
-          <span className={`text-${color} italic`}>{firstWord}</span>
+          <span className={`${color} italic`}>{firstWord}</span>
           <span className="text-neutral-700"> {secondWord}</span>
         </div>
         <div
