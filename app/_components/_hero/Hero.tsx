@@ -5,7 +5,7 @@ import Content from "./Content";
 import { PiSpeakerSimpleHigh } from "react-icons/pi";
 import { PiSpeakerSimpleSlash } from "react-icons/pi";
 import Image from "next/image";
-import hero from "../../../public/hero/hero.svg"
+import hero from "../../../public/hero/hero.svg";
 
 const Hero = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -17,9 +17,11 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    if (isPlaying) {
+    if (isPlaying && audioRef.current) {
+      // @ts-ignore
       audioRef.current.play();
-    } else {
+    } else if (audioRef.current) {
+      // @ts-ignore
       audioRef.current.pause();
     }
   }, [isPlaying]);
@@ -50,14 +52,18 @@ const Hero = () => {
           />
         </div>
         <div className="w-full md:w-1/2 flex lg:justify-center lg:items-center justify-start">
-          <Image src={hero} alt="hero"  />
+          <Image src={hero} alt="hero" />
         </div>
       </div>
       <button
         onClick={togglePlay}
         className="absolute bottom-8 right-4 lg:bottom-4 lg:right-4 border-2 rounded-full text-black p-2"
       >
-        {isPlaying ? <PiSpeakerSimpleHigh className="text-2xl"/> : <PiSpeakerSimpleSlash className="text-2xl"/>}
+        {isPlaying ? (
+          <PiSpeakerSimpleHigh className="text-2xl" />
+        ) : (
+          <PiSpeakerSimpleSlash className="text-2xl" />
+        )}
       </button>
     </div>
   );
