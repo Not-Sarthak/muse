@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({
   image,
 }) => {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center hover:scale-90 transition">
       <div
         className={`w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-[318px] lg:h-[434px] px-5 py-10 sm:py-20 rounded-xl ${bgColor} shadow-inner border border-[#F5F5F5] flex flex-col justify-start items-start gap-6`}
       >

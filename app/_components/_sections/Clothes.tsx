@@ -3,7 +3,7 @@ import { RoughNotation } from "react-rough-notation";
 
 const Clothes = () => {
   return (
-    <div className="w-full relative h-screen overflow-hidden grid place-items-center p-10">
+    <div className="w-full relative h-[120vh] overflow-hidden grid place-items-center p-10">
       <div className="text-center flex flex-col">
         <span className="text-black text-2xl font-semibold font-playfair leading-[28.80px]">
           Discover your perfect blazer.
