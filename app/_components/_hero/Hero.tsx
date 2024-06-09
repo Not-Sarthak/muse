@@ -2,8 +2,8 @@
 import { useState, useEffect, useRef } from "react";
 import Header from "../_navbar/Header";
 import Content from "./Content";
-import { HiOutlineSpeakerWave } from "react-icons/hi2";
-import { HiOutlineSpeakerXMark } from "react-icons/hi2";
+import { PiSpeakerSimpleHigh } from "react-icons/pi";
+import { PiSpeakerSimpleSlash } from "react-icons/pi";
 import Image from "next/image";
 import hero from "../../../public/hero/hero.svg"
 
@@ -57,7 +57,7 @@ const Hero = () => {
         onClick={togglePlay}
         className="absolute bottom-8 right-4 lg:bottom-4 lg:right-4 border-2 rounded-full text-black p-2"
       >
-        {isPlaying ? <HiOutlineSpeakerWave className="text-2xl"/> : <HiOutlineSpeakerXMark className="text-2xl"/>}
+        {isPlaying ? <PiSpeakerSimpleHigh className="text-2xl"/> : <PiSpeakerSimpleSlash className="text-2xl"/>}
       </button>
     </div>
   );
