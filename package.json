@@ -9,8 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "framer": "^2.4.1",
     "framer-motion": "^11.2.10",
+    "lucide-react": "^0.471.0",
     "next": "14.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -19,7 +23,9 @@
     "react-rough-notation": "^1.0.5",
     "react-spring": "^9.7.3",
     "react-tooltip": "^5.26.4",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
